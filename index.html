@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="AutoLoad — auto-calculated progression and fatigue for smarter lifting. Join the beta." />
+    <meta name="theme-color" content="#121212" />
+    <title>AutoLoad — The Smartest Way to Lift</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              surface: "#121212",
+              accent: "#34C759",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col bg-surface antialiased text-white selection:bg-accent/30 selection:text-white">
+    <header class="border-b border-white/10">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-5 lg:px-8">
+        <a href="index.html" class="flex items-center gap-2 font-semibold tracking-tight">
+          <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-accent text-surface text-lg font-bold">A</span>
+          <span class="text-lg">AutoLoad</span>
+        </a>
+        <a
+          href="#beta"
+          class="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-surface shadow-[0_0_24px_-4px_rgba(52,199,89,0.55)] transition hover:bg-[#30b653] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          Join the Beta
+        </a>
+      </div>
+    </header>
+
+    <main id="beta" class="flex flex-1 flex-col justify-center">
+      <section class="mx-auto max-w-5xl px-6 py-20 text-center lg:px-8 lg:py-28">
+        <p class="mb-4 inline-flex items-center rounded-full border border-accent/40 bg-accent/10 px-4 py-1 text-xs font-medium uppercase tracking-widest text-accent">
+          iOS fitness · Coming soon
+        </p>
+        <h1 class="mx-auto max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl lg:leading-[1.08]">
+          The Smartest Way to Lift
+        </h1>
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/75 sm:text-xl">
+          AutoLoad calculates progression and manages fatigue for you — so every session stays challenging without guessing loads or burning out.
+        </p>
+        <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a
+            href="#beta-signup"
+            class="inline-flex w-full items-center justify-center rounded-full bg-accent px-8 py-4 text-base font-semibold text-surface shadow-[0_0_32px_-6px_rgba(52,199,89,0.6)] transition hover:bg-[#30b653] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:w-auto"
+          >
+            Join the Beta
+          </a>
+          <span id="beta-signup" class="sr-only">Beta signup</span>
+          <p class="max-w-xs text-sm text-white/50">
+            Tell friends training smart — invite-only beta spots opening regularly.
+          </p>
+        </div>
+      </section>
+
+      <section class="border-t border-white/10 bg-black/20 py-16">
+        <div class="mx-auto grid max-w-5xl gap-10 px-6 sm:grid-cols-3 lg:px-8">
+          <div class="text-center sm:text-left">
+            <div class="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-accent/15 text-accent sm:mx-0">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h2 class="text-lg font-semibold">Auto progression</h2>
+            <p class="mt-2 text-sm leading-relaxed text-white/65">
+              Loads adapt based on performance — no spreadsheets required.
+            </p>
+          </div>
+          <div class="text-center sm:text-left">
+            <div class="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-accent/15 text-accent sm:mx-0">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <h2 class="text-lg font-semibold">Fatigue-aware</h2>
+            <p class="mt-2 text-sm leading-relaxed text-white/65">
+              Train hard when you’re fresh — ease off when recovery matters.
+            </p>
+          </div>
+          <div class="text-center sm:text-left">
+            <div class="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-accent/15 text-accent sm:mx-0">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h2 class="text-lg font-semibold">Built for iOS</h2>
+            <p class="mt-2 text-sm leading-relaxed text-white/65">
+              Fast, focused training flows designed for your phone.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 mt-auto">
+      <div class="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-10 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+        <p class="text-sm text-white/50">
+          © <span id="year"></span> AutoLoad. All rights reserved.
+        </p>
+        <nav class="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm" aria-label="Footer">
+          <a href="mailto:support@autoload.com" class="text-accent underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
+            Contact Support
+          </a>
+          <a href="privacy.html" class="text-accent underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
+            Privacy Policy
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
